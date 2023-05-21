@@ -25,4 +25,9 @@ Study notes for AWS Certified Developer - Associate exam 2023. Covers key topics
   The final output should be in a clear, easy-to-remember note format.
   ```
 
+  ```prompt
+  "[Your Questions and their answers]"
+  Based on the questions and their correct answers provided above, can you help me derive the core values and key concepts?
+  ```
+
 [Back to main page](../README.md) | [Next: Getting Started with AWS](./getting-started-with-aws.md)

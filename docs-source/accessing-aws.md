@@ -14,6 +14,7 @@
       - [Default Profile](#default-profile)
       - [Assuming Roles](#assuming-roles)
   - [AWS SDK (Software Developer Kit)](#aws-sdk-software-developer-kit)
+  - [Quiz](#quiz)
 
 ## AWS Management Console
 
@@ -151,4 +152,24 @@ A set of language-specific libraries used to access and manage AWS services prog
 - Supports various programming languages, mobile SDKs (Android, iOS), and IoT device SDKs.
 - Example: AWS CLI is built on AWS SDK for Python (Boto).
 
-[Previous: IAM (Identity and Access Management](./iam-identity-and-access-management.md) | [Back to main page](../README.md) | [Next: EC2 (Elastic Compute Cloud)](./ec2-elastic-compute-cloud.md)
+## Quiz
+
+- **Principle of Least Privilege**: This principle advocates for granting the minimal level of access or permissions necessary for a user to perform their tasks, thus minimizing potential damage in case of a breach.
+
+- **IAM Roles**: IAM roles are AWS entities that have permissions policies determining what the identity can and cannot do in AWS. They are not associated with specific users or groups but can be assumed by trusted entities.
+
+- **IAM Users and User Groups**: IAM users represent a person or service, and User Groups are collections of IAM users. Users don't have to belong to a group, and groups can't contain other groups.
+
+- **IAM Policies**: These are JSON documents that are attached to users, groups, and roles to define their permissions. They determine what actions are allowed or denied on what AWS resources.
+
+- **IAM Security Tools**: AWS provides security tools like the IAM Credentials Report to aid in managing and maintaining security.
+
+- **Best Practices**: Some recommended best practices for AWS IAM include not using the root account for everyday tasks, enabling multi-factor authentication (MFA), and regularly rotating credentials.
+
+- **Shared Responsibility Model**: In AWS's model, AWS is responsible for the security of the cloud (i.e., infrastructure), and customers are responsible for security in the cloud (i.e., managing their resources, including IAM configurations).
+
+- **IAM Statements**: An IAM policy consists of one or more statements that include components like Effect, Principal, Action, Resource, and Condition. The Version is not a part of the statement but of the policy itself.
+
+- **Root Account Security**: For root account security, it's recommended to enable MFA and limit its usage. The root account has full access to all resources in the AWS account and cannot be restricted; therefore, it's crucial to secure it effectively.
+
+[Previous: IAM (Identity and Access Management](./iam-identity-and-access-management.md) | [Back to main page](../README.md) | [Next: EC2 (Elastic Compute Cloud)](./ec2-fundamentals.md)
